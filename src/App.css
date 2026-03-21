@@ -1,0 +1,340 @@
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+header{
+  position: fixed;
+  top: 0;
+  background-color: #374151;
+  color: white;
+  padding: 0 0;
+  width: 100%;
+ 
+
+}
+
+ .header-container{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  width: 100%;
+  max-width:1200px;
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 0 20px;
+ 
+  
+}
+
+.menu{
+
+  display: flex;
+  list-style: none;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+
+/* main section */
+
+main{
+  margin-top: 80px;
+ 
+  flex: 1;
+  
+  
+  
+}
+
+ .main-containet{
+  background-color: rgb(241, 236, 236);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 25px;
+  height: 90vh;
+}
+
+.content-main{
+  width: 50%;
+   
+ 
+}
+
+.h2-top{
+  font-size: 36px;
+  font-style: italic;
+  font-family: Arial, sans-serif;
+}
+.main-containet p{
+  font-size: 19px;
+}
+
+.description{
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.Picture{
+  background: transparent;
+  mix-blend-mode: multiply;
+  margin: 20px auto;
+  width: 100%;
+  height: auto;
+  display: block;
+  
+ 
+}
+
+
+ 
+/* for responsiveness */
+@media(max-width: 768px){
+
+  main{
+    margin-top: 80%;
+   
+  }
+  .header-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu{
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-containet{
+
+    flex-direction: column;
+    height: auto;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .content-main{
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+}
+
+
+/* james page */
+
+.aboutUs{
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #ffffff;
+  margin-bottom: 7%;
+  margin-top: 6%;
+
+
+
+
+}
+
+.aboutUs-container{
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  height: 80vh;
+  padding-top: 90px;
+
+  
+
+}
+
+.content-about{
+  height: auto;
+  width: 100%;
+  padding-right: 50px;
+  height: 43vw;
+  font-style: italic;
+  
+}
+
+.jamesPic{
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  mix-blend-mode: multiply;
+  margin: 20px auto;
+  width: 100%;
+  display: block;
+  align-items: center;
+  
+}
+
+.socmed{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+
+/* nelson */
+
+.aboutUs-container-nelson{
+  background-color: rgb(241, 236, 236);
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 80px;
+  height: 80vh;
+  padding: 100px;
+  align-items: center;
+
+}
+
+/* jessie */
+.aboutUs-container-jessie{
+  background-color: ffffff;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 80px;
+  height: 70vh;
+  padding: 100px;
+
+}
+
+.jessiePic{
+  background: transparent;
+  mix-blend-mode: multiply;
+  margin: 20px auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  
+}
+
+
+/* about page */
+
+.about{
+  background-color:rgb(241, 236, 236) ;
+  display: flex;
+}
+
+.about-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5%;
+  gap: 80px;
+  align-items: center;
+  padding-left: 50px;
+  
+
+}
+
+.left-side{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  padding: 3.5%;
+
+}
+
+
+.right-side p{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.core-tech{
+  padding-bottom: 10px;
+}
+.mern span{
+  margin-right: 60px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  
+
+}
+
+
+/* services */
+
+.servicesContainer{
+  text-align: center;
+  padding: 40px;
+  font-size: 25px;
+  margin-top: 5%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  gap: 29px;
+  margin-left: 13%;
+  margin-right: 60%;
+  margin-bottom: 10% ;
+
+  
+
+}
+
+.grid div{
+  width: 504px;
+  background-color:rgb(241, 236, 236);
+  border: none;
+  
+  border-radius: 10px;
+  padding-top: 19px;
+  padding-left: 19px;
+  
+
+}
+
+.grid div:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+
+
+.icon1 {
+  color: hsla(0, 51%, 78%, 0.815);
+  font-size: 40px;
+}
+
+.icon2{
+  color: hsla(0, 51%, 78%, 0.815);
+  font-size: 40px;
+}
+
+.icon3{
+  color: hsla(0, 51%, 78%, 0.815);
+  font-size: 40px;
+}
+
+.icon4{
+  color: hsla(0, 51%, 78%, 0.815);
+  font-size: 40px;
+}
