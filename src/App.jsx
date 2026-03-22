@@ -3,6 +3,7 @@ import kulokuys from "./img/kulokuys.jpeg";
 import jamesPic2 from "./img/Portogas_D_James.jpg";
 import nelson from "./img/nelson.jpg";
 import escanor from "./img/LionSinOfPride.jpg";
+import BMS from "./img/barberMS.png";
 
 import {
   FaFacebook,
@@ -11,6 +12,7 @@ import {
   FaLaptopCode,
   FaServer,
   FaLayerGroup,
+  FaTools,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiFigma } from "react-icons/si";
@@ -94,9 +96,9 @@ function App() {
 
               {/* socmed */}
               <div className="socmed">
-                <FaFacebook size={30} color="blue" />
-                <FaXTwitter size={30} color="black" />
-                <FaInstagram size={30} color="E1306C" />
+                <FaFacebook className="socmeds" size={30} color="blue" />
+                <FaXTwitter className="socmeds" size={30} color="black" />
+                <FaInstagram className="socmeds" size={30} color="E1306C" />
               </div>
             </div>
           </div>
@@ -128,9 +130,9 @@ function App() {
 
               {/* socmed */}
               <div className="socmed">
-                <FaFacebook size={30} color="blue" />
-                <FaXTwitter size={30} color="black" />
-                <FaInstagram size={30} color="E1306C" />
+                <FaFacebook className="socmeds" size={30} color="blue" />
+                <FaXTwitter className="socmeds" size={30} color="black" />
+                <FaInstagram className="socmeds" size={30} color="E1306C" />
               </div>
             </div>
             <div className="jamesPic">
@@ -172,9 +174,9 @@ function App() {
 
               {/* socmed */}
               <div className="socmed">
-                <FaFacebook size={30} color="blue" />
-                <FaXTwitter size={30} color="black" />
-                <FaInstagram size={30} color="E1306C" />
+                <FaFacebook className="socmeds" size={30} color="blue" />
+                <FaXTwitter className="socmeds" size={30} color="black" />
+                <FaInstagram className="socmeds" size={30} color="E1306C" />
               </div>
             </div>
           </div>
@@ -184,7 +186,9 @@ function App() {
         <section className="about">
           <div className="about-container">
             <div className="left-side">
-              <h1>Crafting Meaningful Web Application & Intuitive Experiences</h1>
+              <h1>
+                Crafting Meaningful Web Application & Intuitive Experiences
+              </h1>
             </div>
             <div className="right-side">
               <p>
@@ -229,25 +233,273 @@ function App() {
             <div className="grid">
               <div>
                 <FaPalette className="icon1" /> <br />
-                <span><h3>UI/UX Designing</h3></span>
-                <p>Crafting intuitive interfaces with Figma and modern design principles,  focused on user behavior and aesthetics.</p>
+                <span>
+                  <h3>UI/UX Designing</h3>
+                </span>
+                <p>
+                  Crafting intuitive interfaces with Figma and modern design
+                  principles, focused on user behavior and aesthetics.
+                </p>
               </div>
               <div>
-                <FaLaptopCode className="icon2" /><br />
-                <span><h3>Frond-End Development</h3></span>
-                <p>Focuses on building user interfaces and experiences using HTML, CSS, JavaScript, and frameworks like React to make websites interactive and visually appealing.</p>
+                <FaLaptopCode className="icon2" />
+                <br />
+                <span>
+                  <h3>Frond-End Development</h3>
+                </span>
+                <p>
+                  Focuses on building user interfaces and experiences using
+                  HTML, CSS, JavaScript, and frameworks like React to make
+                  websites interactive and visually appealing.
+                </p>
               </div>
               <div>
-                <FaServer className="icon3" /><br />
-               
-                <span><h3>Back-End Development</h3></span>
-                <p>Handles server-side logic, databases, APIs, and application architecture, ensuring data storage, processing, and secure communication between client and server.</p>
+                <FaServer className="icon3" />
+                <br />
+
+                <span>
+                  <h3>Back-End Development</h3>
+                </span>
+                <p>
+                  Handles server-side logic, databases, APIs, and application
+                  architecture, ensuring data storage, processing, and secure
+                  communication between client and server.
+                </p>
               </div>
               <div>
                 <FaLayerGroup className="icon4" /> <br />
-                <span><h3>Full-Stack Development</h3></span>
-                <p>Building scalable web applications with MERN stack, ensuring 
-                  robust backend systems and seamless user experiences.</p>
+                <span>
+                  <h3>Full-Stack Development</h3>
+                </span>
+                <p>
+                  Building scalable web applications with MERN stack, ensuring
+                  robust backend systems and seamless user experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Skills  */}
+        <section className="skills">
+          <div className="skills-container">
+            <div className="title">
+              <h1>Tech Stack & Design Tools</h1>
+              <p>
+                A comprehensive toolkit for building exceptional digital
+                experiences
+              </p>
+            </div>
+            <div className="skillsContent">
+              <div className="skills-left-side">
+                <h2>Tech Stack</h2>
+                <div className="front-end">
+                  <div className="yawa">
+                    <FaLaptopCode className="logo-subtt" />
+                    <h3> Front-End</h3>
+                  </div>
+
+                  <span>React</span>
+                  <span>JavaScript (ES6+)</span>
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>BootStrap</span>
+                </div>
+                <div className="backend">
+                  <div className="yawa">
+                    <FaServer className="logo-subtt" />
+                    <h3>Back-End</h3>
+                  </div>
+
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>Java</span>
+                  <span>RESTful APIs</span>
+                  <span>MongoDB</span>
+                  <span>MySql</span>
+                </div>
+              </div>
+              <div className="skills-right-side">
+                <h2>Design & Testing Tools</h2>
+                <div className="design">
+                  <div className="yawa">
+                    <FaPalette className="logo-subtt" /> <br />
+                    <h3>UI/UX Design</h3>
+                  </div>
+                  <span>Figma</span>
+                  <span>Adobe XD</span>
+                  <span>Sketch</span>
+                </div>
+                <div className="tools">
+                  <div className="yawa">
+                    <FaTools className="logo-subtt" />
+                    <h3>Tools</h3>
+                  </div>
+
+                  <span>GIT&GitHub</span>
+                  <span>Postman</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* system/s we built */}
+        <section className="systemSection">
+          <div className="systemContainer">
+            <div className="systemDesc">
+              <h1>System We Built</h1>
+              <p>
+                Comprehensive portfolio of full-stack systems and platforms I've
+                engineered from concept to deployment. Each project showcases my
+                expertise in modern web technologies and problem-solving
+                capabilities.
+              </p>
+            </div>
+            <div className="systemContent">
+              <div>
+                <img src={BMS} alt="system image" width={500} />
+                <div className="aboutSystem">
+                  <p>FULL-STACK</p>
+                  <h1>Barber Booking Appointment Management System</h1>
+                  <p>
+                    Developed and implemented a web-based appointment management
+                    system for a local barbershop, streamlining booking,
+                    scheduling, and client management. This system demonstrates
+                    proficiency in full-stack development, database design, and
+                    user experience optimization. Features enhance operational
+                    efficiency and provide a seamless experience for both
+                    barbers and clients.
+                  </p>
+                  <div className="features">
+                    <h2>Key Features</h2>
+                    <div className="features-inside">
+                      <ul>
+                        <li>
+                          Real-time appointment booking and calendar management
+                        </li>
+                        <li>Customer profile and service history tracking</li>
+                        <li>Barber availability scheduling and management</li>
+                        <li>
+                          Automated notifications for appointments and reminders
+                        </li>
+                        <li>
+                          Secure user authentication and role-based access for
+                          staff and clients
+                        </li>
+                        <li>
+                          Responsive dashboard for easy access on desktop and
+                          mobile
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="stacks-used">
+                      <span>Html</span>
+                      <span>Css</span>
+                      <span>Javascript</span>
+                      <span>Bootstrap</span>
+                      <span>Php</span>
+                      <span>Mysql</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* wdwadawda */}
+              <div>
+                <img src={BMS} alt="system image" width={500} />
+                <div className="aboutSystem">
+                  <p>FULL-STACK</p>
+                  <h1>Barber Booking Appointment Management System</h1>
+                  <p>
+                    Developed and implemented a web-based appointment management
+                    system for a local barbershop, streamlining booking,
+                    scheduling, and client management. This system demonstrates
+                    proficiency in full-stack development, database design, and
+                    user experience optimization. Features enhance operational
+                    efficiency and provide a seamless experience for both
+                    barbers and clients.
+                  </p>
+                          <div className="features">
+                    <h2>Key Features</h2>
+                    <div className="features-inside">
+                      <ul>
+                        <li>
+                          Real-time appointment booking and calendar management
+                        </li>
+                        <li>Customer profile and service history tracking</li>
+                        <li>Barber availability scheduling and management</li>
+                        <li>
+                          Automated notifications for appointments and reminders
+                        </li>
+                        <li>
+                          Secure user authentication and role-based access for
+                          staff and clients
+                        </li>
+                        <li>
+                          Responsive dashboard for easy access on desktop and
+                          mobile
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="stacks-used">
+                      <span>Html</span>
+                      <span>Css</span>
+                      <span>Javascript</span>
+                      <span>Bootstrap</span>
+                      <span>Php</span>
+                      <span>Mysql</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <img src={BMS} alt="system image" width={500} />
+                <div className="aboutSystem">
+                  <p>FULL-STACK</p>
+                  <h1>Barber Booking Appointment Management System</h1>
+                  <p>
+                    Developed and implemented a web-based appointment management
+                    system for a local barbershop, streamlining booking,
+                    scheduling, and client management. This system demonstrates
+                    proficiency in full-stack development, database design, and
+                    user experience optimization. Features enhance operational
+                    efficiency and provide a seamless experience for both
+                    barbers and clients.
+                  </p>
+                      <div className="features">
+                    <h2>Key Features</h2>
+                    <div className="features-inside">
+                      <ul>
+                        <li>
+                          Real-time appointment booking and calendar management
+                        </li>
+                        <li>Customer profile and service history tracking</li>
+                        <li>Barber availability scheduling and management</li>
+                        <li>
+                          Automated notifications for appointments and reminders
+                        </li>
+                        <li>
+                          Secure user authentication and role-based access for
+                          staff and clients
+                        </li>
+                        <li>
+                          Responsive dashboard for easy access on desktop and
+                          mobile
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="stacks-used">
+                      <span>Html</span>
+                      <span>Css</span>
+                      <span>Javascript</span>
+                      <span>Bootstrap</span>
+                      <span>Php</span>
+                      <span>Mysql</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
