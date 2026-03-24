@@ -13,6 +13,10 @@ import {
   FaServer,
   FaLayerGroup,
   FaTools,
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaPaperPlane,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiFigma } from "react-icons/si";
@@ -418,7 +422,7 @@ function App() {
                     efficiency and provide a seamless experience for both
                     barbers and clients.
                   </p>
-                          <div className="features">
+                  <div className="features">
                     <h2>Key Features</h2>
                     <div className="features-inside">
                       <ul>
@@ -467,7 +471,56 @@ function App() {
                     efficiency and provide a seamless experience for both
                     barbers and clients.
                   </p>
-                      <div className="features">
+                  <div className="features">
+                    <h2>Key Features</h2>
+                    <div className="features-inside">
+                      <ul>
+                        <li>
+                          Real-time appointment booking and calendar management
+                        </li>
+                        <li>Customer profile and service history tracking</li>
+                        <li>Barber availability scheduling and management</li>
+                        <li>
+                          Automated notifications for appointments and reminders
+                        </li>
+                        <li>
+                          Secure user authentication and role-based access for
+                          staff and clients
+                        </li>
+                        <li>
+                          Responsive dashboard for easy access on desktop and
+                          mobile
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="stacks-used">
+                      <span>Html</span>
+                      <span>Css</span>
+                      <span>Javascript</span>
+                      <span>Bootstrap</span>
+                      <span>Php</span>
+                      <span>Mysql</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <img src={BMS} alt="system image" width={500} />
+                <div className="aboutSystem">
+                  <p>FULL-STACK</p>
+                  <h1>Barber Booking Appointment Management System</h1>
+                  <p>
+                    Developed and implemented a web-based appointment management
+                    system for a local barbershop, streamlining booking,
+                    scheduling, and client management. This system demonstrates
+                    proficiency in full-stack development, database design, and
+                    user experience optimization. Features enhance operational
+                    efficiency and provide a seamless experience for both
+                    barbers and clients.
+                  </p>
+                  <div className="features">
                     <h2>Key Features</h2>
                     <div className="features-inside">
                       <ul>
@@ -504,7 +557,127 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* contact section */}
+        <section className="contact-section">
+          <div className="contact-container">
+            <div className="contact-heading">
+              <div className="contact-heading-internal">
+                <h1>Let's Collaborate</h1>
+                <p>
+                  Have a project in mind? Let's discuss how we can work together
+                  to bring your <br />
+                  vision to life.
+                </p>
+              </div>
+
+              <div className="grid-contact">
+                <div className="contact-left-side">
+                  <div className="contact-descript">
+                    <h2>Get in Touch</h2>
+                    <p>
+                      I'm always open to discussing new projects, creative
+                      ideas, or opportunities to be part of your vision. Whether
+                      you need a full-stack developer, UI/UX designer, or Web3
+                      specialist, I'm here to help.
+                    </p>
+                    <div className="contact-info">
+                      <div className="email">
+                        <div>
+                          <FaEnvelope className="contact-icon" />
+                        </div>
+                        <div className="icon-title-loc">
+                          <div className="email-font">Email</div>
+                          <div className="mail">kulokuys@gmail.com</div>
+                        </div>
+                      </div>
+
+                      <div className="phone">
+                        <div>
+                          <FaPhone className="contact-icon" />
+                        </div>
+
+                        <div className="icon-title-loc">
+                          <div className="phone-font">Phone</div>
+
+                          <div className="phon">+63 0967 8501 526</div>
+                        </div>
+                      </div>
+                      <div className="location">
+                        <div>
+                          <FaMapMarkerAlt className="contact-icon" />
+                        </div>
+                        <div className="icon-title-loc">
+                          <div className="location-font">Location</div>
+                          <div className="loc">
+                            Ormoc City, Leyte, Philippines
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="projects">
+                    <p>Available for:</p>
+                    <span>Freelance Projects</span>
+                    <span>School System Projects</span>
+                    <span>Full-time Roles</span>
+                  </div>
+                </div>
+                <div className="contact-right-side">
+                  <form action="" className="form">
+                    <div className="message">
+                      <label id="name">Your Name</label>
+                      <input
+                        id="name"
+                        type="text"
+                        placeholder="John Doe"
+                        required
+                      />
+                    </div>
+
+                    <div className="message">
+                      <label id="email">Email Address</label>
+                      <input
+                        id="email"
+                        type="email"
+                        placeholder="john@example.com"
+                        required
+                      />
+                    </div>
+
+                    <div className="message">
+                      <label id="message"> Your Message</label>
+                      <textarea
+                        id="message"
+                        placeholder="Tell us about your project..."></textarea>
+                    </div>
+
+                    <div className="send-message-btn">
+                      <button className="send-btn">
+                        Send Message
+                        <span>
+                          <FaPaperPlane className="send-icon" />
+                        </span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
+      {/* footer  */}
+     
+      <footer>
+        <div className="footer-container">
+          <div>
+            <p>&copy; 2026 Kulokuys. All Rights Reserved</p>
+          </div>
+          Built with React + Vite, CSS. Design by Kulokuys 
+         
+        </div>
+      </footer>
     </>
   );
 }

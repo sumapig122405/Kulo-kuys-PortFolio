@@ -479,12 +479,198 @@ main{
 
 .stacks-used span{
   border: 1px solid;
-  margin-right: 0.1px;
-  padding: 1.5%;
-  padding-left: 2%;
-  padding-right: 2%;
+  border-color: hsl(220, 3%, 79%);
+  display: inline-block;
+  padding: 4px 16px;
+  margin-right: 10px;
   border-radius: 15px;
-  margin-left: 5%;
+  font-weight: 14px;
+
+  
+}
+
+
+/* contact info section */
+
+.contact-section{
+  background-color:rgb(241, 236, 236) ;
+  padding-top: 1.5%;
+  padding-bottom: 4%;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   
+  
+}
+.contact-heading-internal{
+  display:inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2%;
+  margin-right: 0px;
+  
+
+}
+.contact-heading-internal h1{
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  
+}
+
+.contact-heading-internal p{
+  font-size: 18px;
+
+}
+
+.grid-contact{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+  margin: 2% 10% ;
+
+ 
+ 
+}
+
+.contact-left-side{
+  width: 100%;
+}
+
+.contact-info{
+
+ 
+}
+
+.contact-descript h2{
+  font-size: 24px;
+}
+.contact-descript{
+  font-size: 16px;
+}
+
+.email-font, .location-font, .phone-font{
+  color: gray;
+  font-size: 14px;
+}
+.mail, .phon, .loc{
+  
+  color: black;
+  font-size: 16px
+}
+
+
+.phone, .email,.location{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 40px 0px;
+  padding: 3px 18px;
+  border-radius: 15px;
+  opacity: 0.5s;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+
+.location:hover{
+  background-color: white;
+}
+.email:hover{
+  background-color: white;
+} 
+.phone:hover{
+  background-color: white;
+  
+}
+
+.icon-title-loc{
+  display: block;
+  
+ 
+}
+.contact-icon{
+  font-size: 25px;
+  color: hsla(0, 51%, 78%, 0.815);
+  background-color: hsla(0, 17%, 88%, 0.856);
+  padding: 8px 6px;
+  border: none;
+  border-radius: 13px;
+}
+
+.projects span{
+  border: 2px solid;
+  border-color: hsl(210, 100%, 100%);
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 14px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.contact-right-side{
+  display: flex;
+  padding: 32px;
+  background-color: white;
+  border-radius: 7px;
+  height: 66%;
+  
+ 
+}
+.contact-right-side label{
+  font-size: 14px;
+  display: flex;
+}
+.contact-right-side input ,textarea, button{
+  box-sizing: border-box;
+  padding: 8px 12px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  
+}
+
+.contact-right-side textarea{
+  padding: 19px 9px;
+}
+.contact-right-side form{
+  width: 100%;
+}
+
+.message{
+  padding: 15px 0px;
+}
+
+.send-message-btn button{
+  background-color: black;
+  color: white;
+  padding: 12px 8px;
+
+}
+
+.send-icon{
+  background-color: black;
+  margin-left: 10px;
+}
+
+.send-icon:hover{
+  opacity: 0.3s;
+  
+}
+
+.send-btn:hover{
+  margin-right: 20px;
+}
+
+
+/* footer */
+.footer-container{
+  text-align: center;
+  padding: 4% 0%;
 }
