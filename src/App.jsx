@@ -17,9 +17,79 @@ import {
   FaPhone,
   FaMapMarkerAlt,
   FaPaperPlane,
+  FaArrowRight,
 } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { SiFigma } from "react-icons/si";
+
+
+
+function Home() {
+  return (
+    <section className="nelsonSection">
+      <div className="aboutUs-container-nelson">
+       
+        <div className="content-about">
+
+          <h2 className="h2-top"> Hi, We are Kulo-Kuys Group,</h2>
+          <h1 className="description">
+            Full-Stack Developer: <br /> Web Developer & <br />UI / UX Designer
+          </h1>
+          <p className="atik">
+            We are a team of skilled developers specializing in full-stack web development, capable of building dynamic and scalable web applications from the ground up. From creating responsive, user-friendly interfaces to designing robust backend systems with secure databases, we deliver complete solutions tailored to your needs. Our expertise ensures seamless integration across all layers, turning ideas into fully functional, high-performance web applications.
+          </p>
+            <div className="contact-ko">
+              <span className="contaca-me"><a href="#contact">
+                <span className="c">CONTACT ME</span>
+                <span><FaArrowRight/></span> </a>
+              </span>
+            </div>
+             
+          
+        </div>
+         <div className="jamesPic">
+          <img src={nelson} alt="nelson picture" />
+        </div>
+        
+      </div>
+      <div className="ubos-main">
+            <div className="grid-ubos">
+              <div>
+                <FaPalette className="icon2" /> <br />
+                <span>
+                  <h3>UI/UX Designing</h3>
+                </span>
+              
+              </div>
+              <div>
+                <FaLaptopCode className="icon2" />
+                <br />
+                <span>
+                  <h3>Frond-End Development</h3>
+                </span>
+              </div>
+              <div>
+                <FaServer className="icon2" />
+                <br />
+
+                <span>
+                  <h3>Back-End Development</h3>
+                </span>
+              </div>
+              <div>
+                <FaLayerGroup className="icon2" /> <br />
+                <span>
+                  <h3>Full-Stack Development</h3>
+                </span>
+              </div>
+            </div>
+      </div>
+    </section>
+  );
+}
+
+
+function Members(){
+
+}
 
 function App() {
   return (
@@ -32,162 +102,42 @@ function App() {
           </div>
           <nav>
             <ul className="menu">
-              <li>Home</li>
-              <li>About Us</li>
-              <li> Services</li>
-              <li> Skills</li>
+              <li>
+                {" "}
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About Us</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#services">Services</a>{" "}
+              </li>
+              <li>
+                {" "}
+                <a href="#skills"> Skills</a>
+              </li>
+              <li>
+                <a href="#system">Systems</a>
+              </li>
+              <li>
+                <a href="#contact">contact</a>
+              </li>
             </ul>
           </nav>
         </div>
       </header>
 
       {/* main/ content */}
-      <main>
+
+      <main id="home">
         {/* HOME PAGE */}
-        <section>
-          <div className="main-containet">
-            <div className="content-main">
-              <h2 className="h2-top">Hey, We are the KULO Kuys group,</h2>
-              <h1 className="description">
-                A Pirate Coder <br /> & Vibe Coder
-              </h1>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Provident, eum deserunt eveniet possimus exercitationem
-                similique officiis eligendi iusto tempora vel. Minus facilis
-                porro dolore amet ullam delectus recusandae excepturi accusamus
-                magnam. Facilis dolor, necessitatibus quisquam esse nemo
-                expedita quaerat?
-              </p>
-            </div>
-
-            <div className="Picture">
-              <img src={kulokuys} alt="kulokoys logo" />
-            </div>
-          </div>
-        </section>
-
-        {/*Home page */}
-
-        <section className="jamesSection">
-          <div className="aboutUs-container">
-            <div className="jamesPic">
-              <img
-                src={jamesPic2}
-                alt="james picture"
-                height={500}
-                width={400}
-              />
-            </div>
-            <div className="content-about">
-              <h2 className="h2-top">James T. Aligway</h2>
-              <h1 className="description">
-                UI / UX Designer, <br /> Monster in Front-end development
-              </h1>
-              <p>
-                As a front-end developer, I build modern, responsive, and
-                high-performing web applications that provide seamless user
-                experiences. I am passionate about creating clean and visually
-                appealing interfaces while ensuring functionality and usability
-                across different devices and screen sizes. I work with
-                technologies like HTML, CSS, JavaScript, React, and Tailwind CSS
-                to develop interactive and dynamic user interfaces. I am
-                dedicated to writing efficient, maintainable code and
-                continuously improving my skills to stay updated with the latest
-                trends in web development and deliver better digital
-                experiences.
-              </p>
-
-              {/* socmed */}
-              <div className="socmed">
-                <FaFacebook className="socmeds" size={30} color="blue" />
-                <FaXTwitter className="socmeds" size={30} color="black" />
-                <FaInstagram className="socmeds" size={30} color="E1306C" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* nelson */}
-
-        <section className="nelsonSection">
-          <div className="aboutUs-container-nelson">
-            <div className="content-about">
-              <h2 className="h2-top">Nelson B. Ramirez III</h2>
-              <h1 className="description">
-                Full-Stack Developer: <br /> Web, Mobile & Software Developer
-              </h1>
-              <p>
-                As a full-stack developer, I design and build complete web
-                applications, managing both the front-end and back-end to
-                deliver seamless, responsive, and high-performing user
-                experiences. On the front-end, I work with HTML, CSS,
-                JavaScript, React, and Tailwind CSS to create interactive and
-                visually appealing interfaces. On the back-end, I specialize in
-                Java with Spring Framework, Node.js, and Express, along with
-                databases like MySQL and MongoDB, enabling me to develop
-                scalable, secure, and efficient applications. I am passionate
-                about writing clean, maintainable code, continuously improving
-                my skills, and delivering end-to-end solutions that provide
-                meaningful value to users.
-              </p>
-
-              {/* socmed */}
-              <div className="socmed">
-                <FaFacebook className="socmeds" size={30} color="blue" />
-                <FaXTwitter className="socmeds" size={30} color="black" />
-                <FaInstagram className="socmeds" size={30} color="E1306C" />
-              </div>
-            </div>
-            <div className="jamesPic">
-              <img src={nelson} alt="nelson picture" height={500} width={400} />
-            </div>
-          </div>
-        </section>
-
-        {/* Jessie */}
-        <section className="jessieSection">
-          <div className="aboutUs-container-jessie">
-            <div className="jessiePic">
-              <img
-                src={escanor}
-                alt="nelson picture"
-                height={500}
-                width={400}
-              />
-            </div>
-
-            <div className="content-about">
-              <h2 className="h2-top">Jessie P. Sumapig</h2>
-              <h1 className="description">
-                QA Tester: <br /> Focused on reliable and well-tested
-                applications.
-              </h1>
-              <p>
-                As a software tester, I ensure the quality and reliability of
-                applications by identifying bugs, verifying functionality, and
-                improving overall user experience. I perform manual and basic
-                automated testing to validate that systems meet requirements and
-                function correctly across different environments. I am
-                detail-oriented and focused on writing clear test cases,
-                reporting issues effectively, and collaborating with developers
-                to deliver stable and high-quality software. I am continuously
-                improving my skills in testing methodologies, tools, and best
-                practices to ensure efficient and accurate results.
-              </p>
-
-              {/* socmed */}
-              <div className="socmed">
-                <FaFacebook className="socmeds" size={30} color="blue" />
-                <FaXTwitter className="socmeds" size={30} color="black" />
-                <FaInstagram className="socmeds" size={30} color="E1306C" />
-              </div>
-            </div>
-          </div>
+        <section >
+          <Home />
         </section>
 
         {/* About Us */}
-        <section className="about">
+        <section className="about" id="about">
           <div className="about-container">
             <div className="left-side">
               <h1>
@@ -224,7 +174,7 @@ function App() {
         </section>
 
         {/* services */}
-        <section>
+        <section id="services">
           <div>
             <div className="servicesContainer">
               <h2>Our Services</h2>
@@ -284,7 +234,7 @@ function App() {
           </div>
         </section>
         {/* Skills  */}
-        <section className="skills">
+        <section className="skills" id="skills">
           <div className="skills-container">
             <div className="title">
               <h1>Tech Stack & Design Tools</h1>
@@ -347,7 +297,7 @@ function App() {
           </div>
         </section>
         {/* system/s we built */}
-        <section className="systemSection">
+        <section className="systemSection" id="system">
           <div className="systemContainer">
             <div className="systemDesc">
               <h1>System We Built</h1>
@@ -559,7 +509,7 @@ function App() {
         </section>
 
         {/* contact section */}
-        <section className="contact-section">
+        <section className="contact-section" id="contact">
           <div className="contact-container">
             <div className="contact-heading">
               <div className="contact-heading-internal">
@@ -668,14 +618,13 @@ function App() {
         </section>
       </main>
       {/* footer  */}
-     
+
       <footer>
         <div className="footer-container">
           <div>
             <p>&copy; 2026 Kulokuys. All Rights Reserved</p>
           </div>
-          Built with React + Vite, CSS. Design by Kulokuys 
-         
+          Built with React + Vite, CSS. Design by Kulokuys
         </div>
       </footer>
     </>

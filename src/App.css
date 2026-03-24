@@ -4,16 +4,19 @@ body{
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 header{
   position: fixed;
   top: 0;
-  background-color: #374151;
-  color: white;
-  padding: 0 0;
+  background-color: rgb(241, 236, 236);;
+  color: black;
+  padding: 1px 40px;
   width: 100%;
  
 
@@ -42,6 +45,26 @@ header{
   margin: 0;
   padding: 0;
   
+  
+}
+
+.menu a:hover{
+ color:  hsla(0, 51%, 78%, 0.815);
+}
+
+.menu a:active{
+  color: black;
+  
+}
+.menu a.active{
+  color: hsla(0, 51%, 78%, 0.815); ;
+}
+
+
+.menu a{
+  color: black;
+  text-decoration: none;
+
 }
 
 
@@ -49,34 +72,15 @@ header{
 
 /* main section */
 
-main{
-  margin-top: 80px;
  
-  flex: 1;
-  
-  
-  
-}
 
- .main-containet{
-  background-color: rgb(241, 236, 236);
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  gap: 25px;
-  height: 90vh;
-}
 
-.content-main{
-  width: 50%;
-   
- 
-}
 
 .h2-top{
   font-size: 36px;
   font-style: italic;
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 .main-containet p{
   font-size: 19px;
@@ -86,17 +90,68 @@ main{
   font-family: sans-serif;
   font-style: italic;
   font-weight: bold;
+  padding-bottom: 9px;
 }
 
-.Picture{
-  background: transparent;
-  mix-blend-mode: multiply;
-  margin: 20px auto;
-  width: 100%;
-  height: auto;
-  display: block;
+.atik{
+  margin-bottom: 40px;
+}
+
+.contact-ko{
+display: inline-flex;
   
+}
+
+.contaca-me{
+  background-color: black;
+  padding: 12px 19px;
+  border-radius: 20px;
+  
+}
+.contaca-me a{
+ text-decoration: none;
+ color: white;
+}
+
+.c{
+  margin-right: 20px;
+}
+
+
+
+
+.aboutUs-container-nelson{
+  background-color: rgb(241, 236, 236);
+  display: flex;
+  align-items: center;
+  
+  gap: 15px;
+  margin-top: 6%;
+  padding-top: 7%;
+  padding-left:  10%;
+
+  padding-bottom: 70px;
+}
+
+
+
+.ubos-main{
+  
+  background-color: rgb(241, 236, 236);;
+}
+
+.grid-ubos{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 18%;
+  font-size: 10px;
  
+}
+
+.grid-ubos .icon2{
+  font-size: 27px;
 }
 
 
@@ -144,8 +199,7 @@ main{
   font-weight: bold;
   font-style: italic;
   background-color: #ffffff;
-  margin-bottom: 7%;
-  margin-top: 6%;
+  
 
 
 
@@ -155,10 +209,9 @@ main{
 .aboutUs-container{
   background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 15px;
-  height: 80vh;
   padding-top: 90px;
 
   
@@ -166,25 +219,28 @@ main{
 }
 
 .content-about{
-  height: auto;
-  width: 100%;
-  padding-right: 50px;
-  height: 43vw;
   font-style: italic;
+  width: 600px;
   
 }
 
 .jamesPic{
   display: flex;
-  justify-content: space-between;
-  background: transparent;
-  mix-blend-mode: multiply;
-  margin: 20px auto;
-  width: 100%;
-  display: block;
   align-items: center;
+  justify-content:space-evenly ;
+  width: 700px;
   
 }
+
+.jamesPic img{
+  width: 600px;
+  height: 650px;
+  
+
+}
+
+/* nelson */
+
 
 .socmed{
   display: flex;
@@ -199,42 +255,7 @@ main{
 }
 
 
-/* nelson */
 
-.aboutUs-container-nelson{
-  background-color: rgb(241, 236, 236);
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  padding-top: 80px;
-  height: 80vh;
-  padding: 100px;
-  align-items: center;
-
-}
-
-/* jessie */
-.aboutUs-container-jessie{
-  background-color: ffffff;
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  padding-top: 80px;
-  height: 70vh;
-  padding: 100px;
-
-}
-
-.jessiePic{
-  background: transparent;
-  mix-blend-mode: multiply;
-  margin: 20px auto;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  
-}
 
 
 /* about page */
@@ -289,7 +310,8 @@ main{
   text-align: center;
   padding: 40px;
   font-size: 25px;
-  margin-top: 5%;
+  padding-top: 6%;
+  
 }
 
 .grid {
@@ -349,10 +371,13 @@ main{
 .skills{
   background-color:rgb(241, 236, 236);
   text-align: center;
+ 
   
 }
 .skills-container{
   padding: 20px;
+  padding-top: 5%;
+  padding-bottom: 8%;
 }
 
 .title{
@@ -409,12 +434,12 @@ main{
 /* systems sections */
 
 .systemSection{
- margin-top: 8%;
  height: auto;
 }
 
 .systemContainer{
   margin: 9%;
+  padding-top: 7%;
 
   
 }
@@ -422,6 +447,7 @@ main{
   width: 100%;
   border: none;
   border-radius: 15px;
+  
 }
 
 .systemDesc{
@@ -502,6 +528,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 4%;
   
   
   
