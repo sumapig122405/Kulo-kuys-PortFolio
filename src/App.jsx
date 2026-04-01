@@ -4,6 +4,9 @@ import jamesPic2 from "./img/Portogas_D_James.jpg";
 import nelson from "./img/nelson.jpg";
 import escanor from "./img/LionSinOfPride.jpg";
 import BMS from "./img/barberMS.png";
+import daeHo from "./img/idol.jpg";
+import MiAh from "./img/Mi-Ah.jpg";
+import SuAh from "./img/Su-Ah.jpg";
 
 import {
   FaFacebook,
@@ -20,75 +23,143 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-
-
 function Home() {
   return (
     <section className="nelsonSection">
       <div className="aboutUs-container-nelson">
-       
         <div className="content-about">
-
           <h2 className="h2-top"> Hi, We are Kulo-Kuys Group,</h2>
           <h1 className="description">
-            Full-Stack Developer: <br /> Web Developer & <br />UI / UX Designer
+            Full-Stack Developer: <br /> Web Developer & <br />
+            UI / UX Designer
           </h1>
           <p className="atik">
-            We are a team of skilled developers specializing in full-stack web development, capable of building dynamic and scalable web applications from the ground up. From creating responsive, user-friendly interfaces to designing robust backend systems with secure databases, we deliver complete solutions tailored to your needs. Our expertise ensures seamless integration across all layers, turning ideas into fully functional, high-performance web applications.
+            We are a team of skilled developers specializing in full-stack web
+            development, capable of building dynamic and scalable web
+            applications from the ground up. From creating responsive,
+            user-friendly interfaces to designing robust backend systems with
+            secure databases, we deliver complete solutions tailored to your
+            needs. Our expertise ensures seamless integration across all layers,
+            turning ideas into fully functional, high-performance web
+            applications.
           </p>
-            <div className="contact-ko">
-              <span className="contaca-me"><a href="#contact">
+          <div className="contact-ko">
+            <span className="contaca-me">
+              <a href="#contact">
                 <span className="c">CONTACT ME</span>
-                <span><FaArrowRight/></span> </a>
-              </span>
-            </div>
-             
-          
+                <span>
+                  <FaArrowRight />
+                </span>{" "}
+              </a>
+            </span>
+          </div>
         </div>
-         <div className="jamesPic">
+        <div className="jamesPic">
           <img src={nelson} alt="nelson picture" />
         </div>
-        
       </div>
       <div className="ubos-main">
-            <div className="grid-ubos">
-              <div>
-                <FaPalette className="icon2" /> <br />
-                <span>
-                  <h3>UI/UX Designing</h3>
-                </span>
-              
-              </div>
-              <div>
-                <FaLaptopCode className="icon2" />
-                <br />
-                <span>
-                  <h3>Frond-End Development</h3>
-                </span>
-              </div>
-              <div>
-                <FaServer className="icon2" />
-                <br />
+        <div className="grid-ubos">
+          <div>
+            <FaPalette className="icon2" /> <br />
+            <span>
+              <h3>UI/UX Designing</h3>
+            </span>
+          </div>
+          <div>
+            <FaLaptopCode className="icon2" />
+            <br />
+            <span>
+              <h3>Frond-End Development</h3>
+            </span>
+          </div>
+          <div>
+            <FaServer className="icon2" />
+            <br />
 
-                <span>
-                  <h3>Back-End Development</h3>
-                </span>
-              </div>
-              <div>
-                <FaLayerGroup className="icon2" /> <br />
-                <span>
-                  <h3>Full-Stack Development</h3>
-                </span>
-              </div>
-            </div>
+            <span>
+              <h3>Back-End Development</h3>
+            </span>
+          </div>
+          <div>
+            <FaLayerGroup className="icon2" /> <br />
+            <span>
+              <h3>Full-Stack Development</h3>
+            </span>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
 
+function Members() {
+  return (
+    <section className="memberSection">
+      <div className="aboutUs-container-member">
+        {/* bosss ligs */}
+        <div>
+          <div className="member-pic">
+            <img src={MiAh} height={300} alt="james picture" />
+          </div>
 
-function Members(){
+          <div className="content-member">
+            <div className="member-info"></div>
+            <h2 className=""> James T. Aligway</h2>
+            <h2 className="member-description">
+              Product Manager:
+              <br />
+            </h2>
+            <p className="member-atik">
+              I’m a product manager, guiding product strategy, coordinating
+              teams, and ensuring projects deliver value, meet user needs, and
+              achieve business goals.
+            </p>
+          </div>
+          
+        </div>
+        {/* nelson*/}
+        <div>
+          <div className="member-pic">
+            <img src={SuAh} height={300} alt="james picture" />
+          </div>
 
+          <div className="content-member">
+            <div className="member-info"></div>
+            <h2 className=""> Nelson B. Ramirez III</h2>
+            <h2 className="member-description">
+              Developer:
+              <br />
+            </h2>
+            <p className="member-atik">
+              I’m a developer, creating and maintaining applications, handling
+              both functionality and performance, and ensuring systems run
+              reliably and securely.
+            </p>
+          </div>
+        </div>
+        {/* jessie */}
+        <div>
+          <div className="member-pic">
+            <img className="jessie-pic" height={300} src={daeHo} alt="james picture" />
+          </div>
+
+          <div className="content-member">
+            <div className="member-info"></div>
+            <h2 className=""> Jessie P. Sumapig</h2>
+            <h2 className="member-description">
+              Tester:
+              <br />
+            </h2>
+            <p className="member-atik">
+              I’m a tester, evaluating applications for bugs, ensuring quality,
+              and verifying that systems run reliably and meet requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 function App() {
@@ -121,7 +192,7 @@ function App() {
                 <a href="#system">Systems</a>
               </li>
               <li>
-                <a href="#contact">contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
@@ -132,9 +203,11 @@ function App() {
 
       <main id="home">
         {/* HOME PAGE */}
-        <section >
+        <section>
           <Home />
         </section>
+
+        <Members />
 
         {/* About Us */}
         <section className="about" id="about">
